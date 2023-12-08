@@ -1,3 +1,5 @@
+function renderTable(data){
+    try {
 document.addEventListener('DOMContentLoaded', document.addEventListener('DOMContentLoaded', function () {
     // 示例数据
     const data = [
@@ -76,5 +78,6 @@ document.addEventListener('DOMContentLoaded', document.addEventListener('DOMCont
             row.innerHTML = `<td>${item.nickname}</td><td>${item.QQnumber}</td><td>${item.fan}</td><td>${item.reject}</td><td>${item.goodimpression}</td><td>${item.other}</td>`;
             infoTableBody.appendChild(row);
         });
-    }
+    } catch (error){
+        console.error('Error rendering table:', error);
 });
