@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>信息库</title>
+</head>
+<body>
+    <h1>信息库</h1>
+  
+    <!--分类搜索框--!>
+    <label for="categorySelect">选择分类:</label>
+    <select id="CategorySelect">
+        <option value="nickname">昵称</option>
+        <option value="QQnumber">QQ号</option>
+        <option value="fan">推</option>
+        <option value="reject">雷</option>
+        <option value="goodimpression">好感</option>
+        <option value="other">其它</option>
+</select>
+    <!-- 搜索框 -->
+    <input type="text" id="searchInput" placeholder="搜索...">
+
+    <!-- 数据表格 -->
+    <table id="infoTable">
+        <thead>
+            <tr>
+                <th>昵称</th>
+                <th>QQ号</th>
+                <th>推</th>
+                <th>雷</th>
+                <th>好感</th>
+                <th>其它</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 数据行将通过JavaScript动态添加 -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
