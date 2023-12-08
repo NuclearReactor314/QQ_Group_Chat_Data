@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             item.fan.toLowerCase().includes(searchTerm) ||
             item.reject.toLowerCase().includes(searchTerm) ||
             item.goodimpression.toLowerCase().includes(searchTerm) ||
-            item.other.toLowerCase().includes(searchTerm) ||
+            item.other.toLowerCase().includes(searchTerm)
         );
         renderTable(filteredData);
     });
