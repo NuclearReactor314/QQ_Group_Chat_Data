@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // 示例数据
     const data = [
-        { nickname: 'Comparethee', QQnumber: '3260135199', fan: '二代团', reject: '无', goodimpression: '二代4，7', other: '无'},
+        {nickname:'Comparethee', QQnumber:'3260135199', fan:'二代团', reject:'无', goodimpression:'二代4，7', other:'无'},
         // 添加更多数据...
     ];
 
