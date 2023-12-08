@@ -16,9 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
     searchInput.addEventListener('input', function () {
         const searchTerm = searchInput.value.toLowerCase();
         const filteredData = data.filter(item =>
-            item.name.toLowerCase().includes(searchTerm) ||
-            item.age.toString().includes(searchTerm) ||
-            item.city.toLowerCase().includes(searchTerm)
+            item.nickname.toLowerCase().includes(searchTerm) ||
+            item.QQnumber.toString().includes(searchTerm) ||
+            item.fan.toLowerCase().includes(searchTerm) ||
+            item.reject.toLowerCase().includes(searchTerm) ||
+            item.goodimpression.toLowerCase().includes(searchTerm) ||
+            item.other.toLowerCase().includes(searchTerm) ||
         );
         renderTable(filteredData);
     });
@@ -31,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // 遍历数据并添加到表格
         data.forEach(item => {
             const row = document.createElement('tr');
-            row.innerHTML = `<td>${item.name}</td><td>${item.age}</td><td>${item.city}</td>`;
+            row.innerHTML = `<td>${item.nickname}</td><td>${item.QQnumber}</td><td>${item.fan}</td><td>${item.reject}</td><td>${item.goodimpression}</td><td>${item.other}</td>;`
             infoTableBody.appendChild(row);
         });
     }
