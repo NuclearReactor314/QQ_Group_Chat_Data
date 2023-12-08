@@ -77,7 +77,8 @@ document.addEventListener('DOMContentLoaded', document.addEventListener('DOMCont
             const row = document.createElement('tr');
             row.innerHTML = `<td>${item.nickname}</td><td>${item.QQnumber}</td><td>${item.fan}</td><td>${item.reject}</td><td>${item.goodimpression}</td><td>${item.other}</td>`;
             infoTableBody.appendChild(row);
-        });
-    } catch (error){
-        console.error('Error rendering table:', error);
+        } catch (error){
+            console.error('Error rendering table:', error);
+        }
+    }
 });
